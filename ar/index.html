@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DostoForge — أدوات أفلام وتطبيقات صغيرة</title>
   <meta name="description" content="DostoForge يصنع أدوات أفلام صغيرة: فراميكس استوديو بطاقات المراجعات، وPocketPigeon إضافة إرسال مشفّرة من المتصفح إلى الهاتف.">
-  <meta name="theme-color" content="#08070c">
+  <meta name="theme-color" content="#050914">
   <link rel="canonical" href="https://dostovinchi.github.io/ar/">
   <link rel="alternate" hreflang="en" href="https://dostovinchi.github.io/">
   <link rel="alternate" hreflang="ar" href="https://dostovinchi.github.io/ar/">
@@ -15,7 +15,7 @@
   <meta property="og:title" content="DostoForge — أدوات أفلام وتطبيقات صغيرة">
   <meta property="og:description" content="استوديو بطاقات سينمائية، وخط خاص بين متصفحك وهاتفك.">
   <meta property="og:url" content="https://dostovinchi.github.io/ar/">
-  <meta property="og:image" content="https://dostovinchi.github.io/assets/brand/og.jpg">
+  <meta property="og:image" content="https://dostovinchi.github.io/assets/brand/og.jpg?v=2">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="ar_AR">
@@ -23,16 +23,16 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="DostoForge — أدوات أفلام وتطبيقات صغيرة">
   <meta name="twitter:description" content="استوديو بطاقات سينمائية، وخط خاص بين متصفحك وهاتفك.">
-  <meta name="twitter:image" content="https://dostovinchi.github.io/assets/brand/og.jpg">
-  <link rel="icon" href="../assets/brand/icon.svg" type="image/svg+xml">
-  <link rel="icon" href="../assets/brand/icon-32.png" sizes="32x32" type="image/png">
-  <link rel="apple-touch-icon" href="../assets/brand/icon-180.png">
+  <meta name="twitter:image" content="https://dostovinchi.github.io/assets/brand/og.jpg?v=2">
+  <link rel="icon" href="../assets/brand/icon.svg?v=2" type="image/svg+xml">
+  <link rel="icon" href="../assets/brand/icon-32.png?v=2" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/brand/icon-180.png?v=2">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Reem+Kufi:wght@400;500;600;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css?v=2">
   <script>document.documentElement.classList.add('js');</script>
-  <script src="../app.js" defer></script>
+  <script src="../app.js?v=2" defer></script>
 </head>
 <body>
   <canvas class="embers" data-embers aria-hidden="true"></canvas>
@@ -41,7 +41,7 @@
   <header class="site-header" data-header>
     <div class="container bar">
       <a class="brand" href="../" aria-label="DostoForge — الرئيسية">
-        <img src="../assets/brand/icon.svg" width="31" height="31" alt="">
+        <img src="../assets/brand/mark.svg?v=2" width="31" height="31" alt="">
         <span>DostoForge</span>
       </a>
       <nav class="nav" aria-label="الروابط">
@@ -57,12 +57,13 @@
   <main id="main">
     <section class="hero" aria-labelledby="work-title">
       <div class="hero-media" aria-hidden="true">
-        <img src="../assets/hero/hero-night.webp"
-             srcset="../assets/hero/hero-night-1024.webp 1024w, ../assets/hero/hero-night.webp 1792w"
-             sizes="100vw" width="1792" height="1024" alt="" fetchpriority="high" decoding="async">
+        <picture>
+          <source media="(prefers-reduced-motion: reduce)" srcset="../assets/hero/hero-blue-1024.webp 1024w, ../assets/hero/hero-blue.webp 1792w" sizes="100vw">
+          <source media="(max-width: 640px)" srcset="../assets/hero/hero-blue-mobile.gif">
+          <img src="../assets/hero/hero-blue.gif" width="800" height="450" alt="" fetchpriority="high" decoding="async">
+        </picture>
       </div>
       <div class="container hero-copy">
-        <p class="eyebrow" data-reveal>صانع مستقل · أدوات أفلام</p>
         <h1 id="work-title" class="display-title" data-reveal>أعمالي</h1>
         <p class="hero-lede" data-reveal>استوديو بطاقات سينمائية، وخط خاص بين متصفحك وهاتفك — صُمّما وبُنيا من الصفر.</p>
       </div>
@@ -78,8 +79,7 @@
             <span class="status"><i aria-hidden="true"></i>مباشر</span>
           </p>
           <a class="project-logo" href="https://dostovinchi.github.io/reelnote-review-cards/" target="_blank" rel="noopener noreferrer">
-            <span class="framix-mark" aria-hidden="true">ف.</span>
-            <span>فراميكس</span>
+            <span class="framix-word">فراميكس</span>
           </a>
           <p class="tagline">حوّل تقييماتك في Letterboxd إلى بوسترات سينمائية، ثم صدّر بطاقة ستوري بمقاس 1080 × 1920 — كل ذلك داخل المتصفح.</p>
           <ul class="chips">
@@ -132,7 +132,7 @@
           <p class="footnote">يتضمن الملف الإضافة والمرحّل المحلي. يتطلب Chrome أو Edge 120+، وNode.js 20 أو أحدث.</p>
         </div>
         <div class="pigeon-art project-art">
-          <img class="pigeon-mark-bg" src="../assets/brand/mark.svg" width="230" height="230" alt="" aria-hidden="true">
+          <img class="pigeon-mark-bg" src="../assets/brand/mark.svg?v=2" width="230" height="230" alt="" aria-hidden="true">
           <span class="float-pill"><i aria-hidden="true"></i>PC online</span>
           <span class="art-caption">AES-256-GCM · E2E</span>
           <div class="phone">
@@ -146,7 +146,7 @@
   <footer class="site-footer">
     <div class="container footer-row">
       <a class="footer-brand" href="../">
-        <img src="../assets/brand/icon.svg" width="25" height="25" alt="">
+        <img src="../assets/brand/mark.svg?v=2" width="25" height="25" alt="">
         <span>DostoForge</span>
       </a>
       <p class="footer-note">أدوات صغيرة، مصنوعة بعناية. © 2026 DostoForge.</p>

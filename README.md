@@ -15,7 +15,7 @@ ar/index.html            Arabic page (RTL)
 styles.css               Shared styles
 app.js                   Ember canvas, scroll reveals, quick-start dialog
 assets/brand/            Logo mark, favicons, social card
-assets/hero/             Cinematic hero artwork
+assets/hero/             Animated GIF hero + static WebP fallbacks
 assets/framix/           Framix screenshot
 assets/pocketpigeon/     Icon and phone inbox screenshot
 downloads/               PocketPigeon 1.1.1 ZIP (extension + relay)
@@ -36,5 +36,6 @@ Pushing to `main` runs `.github/workflows/deploy-pages.yml`, which publishes the
 ## Notes
 
 - Fonts come from Google Fonts; the rest of the site is self-contained.
+- The hero uses a looping GIF (mobile and desktop renditions) with a static WebP fallback under reduced motion.
 - No build step, no framework, no analytics.
 - The PocketPigeon download is built from the source project; to update it, replace `downloads/pocketpigeon-<version>.zip` and the version badge in both pages.

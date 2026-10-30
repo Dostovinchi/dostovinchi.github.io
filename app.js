@@ -94,7 +94,7 @@ if (canvas && !reduceMotion) {
       }
 
       const glow = p.alpha * (0.58 + 0.42 * Math.sin(p.twinkle));
-      const tone = p.warm ? '217, 178, 115' : '190, 208, 235';
+      const tone = p.warm ? '224, 234, 255' : '160, 190, 255';
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
       ctx.fillStyle = `rgba(${tone}, ${glow})`;
