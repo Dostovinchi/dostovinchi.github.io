@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
   <script>document.documentElement.classList.add('js');</script>
   <script src="app.js?v=3" defer></script>
 </head>
@@ -62,7 +62,9 @@
         </div>
         <div class="hero-media" aria-hidden="true">
           <picture>
-            <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero/hero-heaven-996.webp 996w, assets/hero/hero-heaven.webp 498w" sizes="(max-width: 900px) 100vw, 500px">
+            <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero/hero-heaven-996.webp 996w, assets/hero/hero-heaven.webp 498w" sizes="(max-width: 900px) 100vw, 75vw">
+            <source media="(max-width: 900px)" type="image/webp" srcset="assets/hero/hero-heaven-anim-mobile.webp">
+            <source type="image/webp" srcset="assets/hero/hero-heaven-anim.webp">
             <img src="assets/hero/hero-heaven.gif" width="498" height="281" alt="" fetchpriority="high" decoding="async">
           </picture>
         </div>
