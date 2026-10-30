@@ -30,9 +30,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css?v=9">
+  <link rel="stylesheet" href="../styles.css?v=10">
   <script>document.documentElement.classList.add('js');</script>
-  <script src="../app.js?v=3" defer></script>
+  <script src="../app.js?v=4" defer></script>
 </head>
 <body>
   <canvas class="embers" data-embers aria-hidden="true"></canvas>
@@ -111,7 +111,6 @@
             <svg class="guide-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
           </summary>
           <div class="guide-body">
-            <div class="guide-column">
             <ol class="guide-steps">
               <li class="guide-step">
                 <span class="guide-index">٠١</span>
@@ -142,8 +141,6 @@
                 </div>
               </li>
             </ol>
-            <p class="guide-tip"><b>نصيحة</b> كل شيء في فراميكس يُعالج داخل متصفحك — بدون حساب أو رفع.</p>
-            </div>
             <div class="guide-media">
               <figure class="guide-shot">
                 <img src="../assets/framix/guide-import.webp" width="1120" height="204" alt="حقل استيراد تقييمات ليتربوكسد في فراميكس مع خانة اسم المستخدم وزر الاستيراد" loading="lazy" decoding="async">
@@ -183,7 +180,6 @@
               تحميل
               <span class="btn-badge">v1.3.0 · 183 KB</span>
             </a>
-            <button class="btn btn-ghost" type="button" data-open-steps>طريقة التشغيل</button>
           </div>
           <p class="footnote">يتضمن الملف الإضافة والمرحّل المحلي. يتطلب Chrome أو Edge 120+، وNode.js 20 أو أحدث.</p>
         </div>
@@ -203,13 +199,12 @@
             <svg class="guide-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
           </summary>
           <div class="guide-body">
-            <div class="guide-column">
             <ol class="guide-steps">
               <li class="guide-step">
                 <span class="guide-index">٠١</span>
                 <div>
                   <strong>جهّزه مرة واحدة</strong>
-                  <p>نزّل الملف، شغّل المرحّل، وحمّل الإضافة. زر «طريقة التشغيل» يشرح الخطوات بالتفصيل.</p>
+                  <p>نزّل الملف وفك ضغطه، شغّل <code>start-relay.cmd</code> على ويندوز أو <code>cd server &amp;&amp; npm install &amp;&amp; npm start</code>، ثم حمّل مجلد <code>extension</code> من <code>chrome://extensions</code>.</p>
                 </div>
               </li>
               <li class="guide-step">
@@ -234,8 +229,6 @@
                 </div>
               </li>
             </ol>
-            <p class="guide-tip"><b>نصيحة</b> المرحّل لا يخزّن إلا النص المشفّر، ومفتاح الغرفة لا يغادر جهازيك.</p>
-            </div>
             <div class="guide-media guide-media-pigeon">
               <div class="guide-phones">
                 <figure class="guide-phone-item">
@@ -273,29 +266,5 @@
       </nav>
     </div>
   </footer>
-
-  <dialog class="dialog" data-steps-dialog aria-labelledby="steps-title">
-    <div class="dialog-body">
-      <button class="dialog-close" type="button" data-close-dialog aria-label="إغلاق">×</button>
-      <p class="dialog-kicker">PocketPigeon · البدء السريع</p>
-      <h2 id="steps-title">شغّله في ثلاث خطوات</h2>
-      <p class="intro">PocketPigeon نصفان: إضافة للمتصفح، ومرحّل صغير يعمل على حاسبك.</p>
-      <ol class="steps">
-        <li>
-          <strong>شغّل المرحّل</strong>
-          <p>على ويندوز، فك ضغط الملف وانقر نقرًا مزدوجًا على <code>start-relay.cmd</code>. أو نفّذ <code>cd server &amp;&amp; npm install &amp;&amp; npm start</code>. أبقِ النافذة مفتوحة.</p>
-        </li>
-        <li>
-          <strong>حمّل الإضافة</strong>
-          <p>افتح <code>chrome://extensions</code>، فعّل «وضع المطوّر»، اختر <strong>تحميل غير مضغوط</strong> وحدد مجلد <code>extension</code>.</p>
-        </li>
-        <li>
-          <strong>اقرن هاتفك</strong>
-          <p>ضع الهاتف على نفس شبكة Wi-Fi، افتح الإضافة وامسح رمز QR. تُشفّر الرسائل على الجهازين.</p>
-        </li>
-      </ol>
-      <p class="dialog-note">Node.js 20+ · ويندوز أو macOS أو Linux · لا يخزّن المرحّل سوى النص المشفّر.</p>
-    </div>
-  </dialog>
 </body>
 </html>

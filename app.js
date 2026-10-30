@@ -25,19 +25,6 @@ if (!('IntersectionObserver' in window) || reduceMotion) {
   window.setTimeout(() => document.documentElement.classList.add('reveal-all'), 3000);
 }
 
-const dialog = document.querySelector('[data-steps-dialog]');
-if (dialog) {
-  document.querySelectorAll('[data-open-steps]').forEach((button) => {
-    button.addEventListener('click', () => dialog.showModal());
-  });
-  dialog.querySelectorAll('[data-close-dialog]').forEach((button) => {
-    button.addEventListener('click', () => dialog.close());
-  });
-  dialog.addEventListener('click', (event) => {
-    if (event.target === dialog) dialog.close();
-  });
-}
-
 const canvas = document.querySelector('[data-embers]');
 if (canvas && !reduceMotion) {
   const ctx = canvas.getContext('2d');

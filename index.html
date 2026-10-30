@@ -29,9 +29,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=9">
+  <link rel="stylesheet" href="styles.css?v=10">
   <script>document.documentElement.classList.add('js');</script>
-  <script src="app.js?v=3" defer></script>
+  <script src="app.js?v=4" defer></script>
 </head>
 <body>
   <canvas class="embers" data-embers aria-hidden="true"></canvas>
@@ -110,7 +110,6 @@
             <svg class="guide-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
           </summary>
           <div class="guide-body">
-            <div class="guide-column">
             <ol class="guide-steps">
               <li class="guide-step">
                 <span class="guide-index">01</span>
@@ -141,8 +140,6 @@
                 </div>
               </li>
             </ol>
-            <p class="guide-tip"><b>Tip</b> Framix renders everything in your browser — no account and no upload.</p>
-            </div>
             <div class="guide-media">
               <figure class="guide-shot">
                 <img src="assets/framix/guide-import.webp" width="1120" height="204" alt="Framix Letterboxd import field with a username input and import button" loading="lazy" decoding="async">
@@ -182,7 +179,6 @@
               Download
               <span class="btn-badge">v1.3.0 · 183 KB</span>
             </a>
-            <button class="btn btn-ghost" type="button" data-open-steps>How to run it</button>
           </div>
           <p class="footnote">Includes the extension and the local relay. Chrome or Edge 120+, Node.js 20 or newer.</p>
         </div>
@@ -202,13 +198,12 @@
             <svg class="guide-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
           </summary>
           <div class="guide-body">
-            <div class="guide-column">
             <ol class="guide-steps">
               <li class="guide-step">
                 <span class="guide-index">01</span>
                 <div>
                   <strong>Set it up once</strong>
-                  <p>Download the ZIP, start the relay and load the extension. The “How to run it” button has the exact setup.</p>
+                  <p>Download and unzip the file, run <code>start-relay.cmd</code> on Windows or <code>cd server &amp;&amp; npm install &amp;&amp; npm start</code>, then load the <code>extension</code> folder from <code>chrome://extensions</code>.</p>
                 </div>
               </li>
               <li class="guide-step">
@@ -233,8 +228,6 @@
                 </div>
               </li>
             </ol>
-            <p class="guide-tip"><b>Tip</b> The relay stores only ciphertext; the room key never leaves your two devices.</p>
-            </div>
             <div class="guide-media guide-media-pigeon">
               <div class="guide-phones">
                 <figure class="guide-phone-item">
@@ -272,29 +265,5 @@
       </nav>
     </div>
   </footer>
-
-  <dialog class="dialog" data-steps-dialog aria-labelledby="steps-title">
-    <div class="dialog-body">
-      <button class="dialog-close" type="button" data-close-dialog aria-label="Close">×</button>
-      <p class="dialog-kicker">PocketPigeon · Quick start</p>
-      <h2 id="steps-title">Run it in three steps</h2>
-      <p class="intro">PocketPigeon is two halves: a browser extension and a small relay that runs on your computer.</p>
-      <ol class="steps">
-        <li>
-          <strong>Start the relay</strong>
-          <p>On Windows, unzip and double-click <code>start-relay.cmd</code>. Otherwise run <code>cd server &amp;&amp; npm install &amp;&amp; npm start</code>. Keep the window open.</p>
-        </li>
-        <li>
-          <strong>Load the extension</strong>
-          <p>Open <code>chrome://extensions</code>, enable Developer mode, choose <strong>Load unpacked</strong> and select the <code>extension</code> folder.</p>
-        </li>
-        <li>
-          <strong>Pair your phone</strong>
-          <p>Put the phone on the same Wi-Fi, open the extension and scan its QR code. Messages are encrypted on both devices.</p>
-        </li>
-      </ol>
-      <p class="dialog-note">Node.js 20+ · Windows, macOS or Linux · The relay only stores ciphertext.</p>
-    </div>
-  </dialog>
 </body>
 </html>
