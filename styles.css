@@ -220,7 +220,7 @@ html[lang="ar"] .brand {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: url("assets/hero/hero-blue-1024.webp") center / cover no-repeat;
+  background: url("assets/hero/hero-anime-996.webp") center / cover no-repeat;
 }
 
 .hero-media picture {
@@ -234,6 +234,7 @@ html[lang="ar"] .brand {
   height: 100%;
   object-fit: cover;
   object-position: 50% 40%;
+  filter: brightness(1.08) saturate(1.03);
 }
 
 .hero-media::after {
@@ -241,14 +242,16 @@ html[lang="ar"] .brand {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(5, 9, 20, 0.82) 0%, rgba(5, 9, 20, 0.18) 26%, rgba(5, 9, 20, 0.08) 48%, rgba(5, 9, 20, 0.8) 82%, var(--bg) 100%),
-    linear-gradient(90deg, rgba(5, 9, 20, 0.72) 0%, rgba(5, 9, 20, 0.18) 48%, transparent 72%);
+    linear-gradient(180deg, rgba(5, 9, 20, 0.88) 0%, rgba(5, 9, 20, 0.46) 20%, rgba(5, 9, 20, 0.16) 44%, rgba(5, 9, 20, 0.64) 76%, var(--bg) 100%),
+    linear-gradient(90deg, rgba(5, 9, 20, 0.9) 0%, rgba(5, 9, 20, 0.58) 38%, rgba(5, 9, 20, 0.16) 70%, transparent 88%),
+    radial-gradient(140% 120% at 72% 8%, rgba(80, 115, 190, 0.16), transparent 62%);
 }
 
 html[dir="rtl"] .hero-media::after {
   background:
-    linear-gradient(180deg, rgba(5, 9, 20, 0.82) 0%, rgba(5, 9, 20, 0.18) 26%, rgba(5, 9, 20, 0.08) 48%, rgba(5, 9, 20, 0.8) 82%, var(--bg) 100%),
-    linear-gradient(270deg, rgba(5, 9, 20, 0.72) 0%, rgba(5, 9, 20, 0.18) 48%, transparent 72%);
+    linear-gradient(180deg, rgba(5, 9, 20, 0.88) 0%, rgba(5, 9, 20, 0.46) 20%, rgba(5, 9, 20, 0.16) 44%, rgba(5, 9, 20, 0.64) 76%, var(--bg) 100%),
+    linear-gradient(270deg, rgba(5, 9, 20, 0.9) 0%, rgba(5, 9, 20, 0.58) 38%, rgba(5, 9, 20, 0.16) 70%, transparent 88%),
+    radial-gradient(140% 120% at 28% 8%, rgba(80, 115, 190, 0.16), transparent 62%);
 }
 
 .hero-copy {
@@ -264,7 +267,7 @@ h1.display-title {
   line-height: 1.04;
   letter-spacing: -0.05em;
   text-wrap: balance;
-  text-shadow: 0 6px 40px rgba(0, 0, 0, 0.55);
+  text-shadow: 0 6px 40px rgba(0, 0, 0, 0.75);
 }
 
 html[lang="ar"] h1.display-title {
@@ -294,7 +297,7 @@ html[lang="ar"] h1.display-title em {
   color: #c6d2e8;
   font-size: clamp(15px, 1.5vw, 18px);
   line-height: 1.85;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.65);
 }
 
 html[lang="ar"] .hero-lede {
