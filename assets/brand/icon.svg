@@ -1,28 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <defs>
     <linearGradient id="tile" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#14223c"/>
-      <stop offset=".55" stop-color="#0a1325"/>
-      <stop offset="1" stop-color="#050a14"/>
+      <stop stop-color="#26124c"/>
+      <stop offset=".55" stop-color="#110826"/>
+      <stop offset="1" stop-color="#05020c"/>
     </linearGradient>
     <linearGradient id="ring" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#e5eeff" stop-opacity=".42"/>
-      <stop offset=".5" stop-color="#9db6e9" stop-opacity=".14"/>
-      <stop offset="1" stop-color="#6f8ecb" stop-opacity=".32"/>
+      <stop stop-color="#eaffd0" stop-opacity=".45"/>
+      <stop offset=".5" stop-color="#9a6bff" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#a8ff5e" stop-opacity=".38"/>
     </linearGradient>
     <radialGradient id="halo" cx="0" cy="0" r="1" gradientTransform="translate(24 16) rotate(42) scale(48)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#7fa6ff" stop-opacity=".35"/>
-      <stop offset="1" stop-color="#7fa6ff" stop-opacity="0"/>
+      <stop stop-color="#9a6bff" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#9a6bff" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="spark" x1="18" y1="12" x2="48" y2="54" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#ffffff"/>
-      <stop offset=".48" stop-color="#dbe7ff"/>
-      <stop offset="1" stop-color="#8da9e4"/>
+      <stop stop-color="#fbfff2"/>
+      <stop offset=".48" stop-color="#e4ffb0"/>
+      <stop offset="1" stop-color="#9bea3f"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="40" y1="30" x2="62" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e6d8ff"/>
+      <stop offset="1" stop-color="#9a6bff"/>
     </linearGradient>
   </defs>
   <rect x="1.5" y="1.5" width="61" height="61" rx="16" fill="url(#tile)" stroke="url(#ring)" stroke-width="0.8"/>
   <rect x="2.5" y="2.5" width="59" height="59" rx="15" fill="url(#halo)"/>
   <path d="M33 11c1.6 12.3 5.5 16.2 17.8 17.8-12.3 1.6-16.2 5.5-17.8 17.8-1.6-12.3-5.5-16.2-17.8-17.8C27.5 27.2 31.4 23.3 33 11Z" fill="url(#spark)"/>
-  <path d="M49 37.5c.7 5.8 3.4 8.5 9.2 9.2-5.8.7-8.5 3.4-9.2 9.2-.7-5.8-3.4-8.5-9.2-9.2 5.8-.7 8.5-3.4 9.2-9.2Z" fill="url(#spark)" opacity=".66"/>
-  <path d="M17 40c.5 4.2 2.5 6.2 6.7 6.7-4.2.5-6.2 2.5-6.7 6.7-.5-4.2-2.5-6.2-6.7-6.7 4.2-.5 6.2-2.5 6.7-6.7Z" fill="url(#spark)" opacity=".45"/>
+  <path d="M49 37.5c.7 5.8 3.4 8.5 9.2 9.2-5.8.7-8.5 3.4-9.2 9.2-.7-5.8-3.4-8.5-9.2-9.2 5.8-.7 8.5-3.4 9.2-9.2Z" fill="url(#violet)" opacity=".8"/>
+  <path d="M17 40c.5 4.2 2.5 6.2 6.7 6.7-4.2.5-6.2 2.5-6.7 6.7-.5-4.2-2.5-6.2-6.7-6.7 4.2-.5 6.2-2.5 6.7-6.7Z" fill="url(#violet)" opacity=".55"/>
 </svg>
