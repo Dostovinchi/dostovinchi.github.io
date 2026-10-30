@@ -605,6 +605,305 @@ html[lang="ar"] .footnote {
   font-size: 12px;
 }
 
+/* Project guides */
+.project-guide {
+  order: 3;
+  grid-column: 1 / -1;
+  align-self: stretch;
+  min-width: 0;
+  margin-top: clamp(2px, 1vw, 14px);
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 100px;
+}
+
+.guide-summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 17px 2px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  list-style: none;
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  transition: color 0.2s;
+}
+
+.guide-summary::-webkit-details-marker {
+  display: none;
+}
+
+.guide-summary::marker {
+  content: "";
+}
+
+.guide-summary:hover {
+  color: var(--accent-strong);
+}
+
+.guide-summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.guide-kicker {
+  flex: none;
+  padding: 4px 9px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+html[lang="ar"] .guide-kicker {
+  font-size: 11px;
+  letter-spacing: 0;
+}
+
+.guide-heading {
+  min-width: 0;
+}
+
+.guide-meta {
+  margin-inline-start: auto;
+  color: var(--faint);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+html[lang="ar"] .guide-meta {
+  font-size: 10px;
+  letter-spacing: 0;
+}
+
+.guide-chev {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  color: var(--muted);
+  transition: transform 0.25s ease, color 0.2s;
+}
+
+.project-guide[open] .guide-chev {
+  transform: rotate(180deg);
+  color: var(--accent);
+}
+
+.guide-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+  gap: clamp(22px, 4vw, 44px);
+  padding: 6px 2px clamp(24px, 3vw, 34px);
+}
+
+.guide-steps {
+  display: grid;
+  align-content: start;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.guide-column {
+  display: grid;
+  align-content: start;
+  gap: 18px;
+  min-width: 0;
+}
+
+.guide-tip {
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px dashed rgba(198, 255, 110, 0.24);
+  border-radius: 12px;
+  background: rgba(198, 255, 110, 0.035);
+  color: var(--faint);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.guide-tip b {
+  margin-inline-end: 6px;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+html[lang="ar"] .guide-tip {
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+html[lang="ar"] .guide-tip b {
+  font-family: var(--body);
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+.guide-step {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  gap: 12px;
+}
+
+.guide-index {
+  padding-top: 2px;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+.guide-step strong {
+  display: block;
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+html[lang="ar"] .guide-step strong {
+  font-weight: 600;
+}
+
+.guide-step p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 1.75;
+}
+
+html[lang="ar"] .guide-step p {
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.guide-step code {
+  padding: 2px 6px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(198, 255, 110, 0.06);
+  color: var(--accent-strong);
+  font-family: var(--mono);
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.guide-media {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+}
+
+.guide-shot {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #07040f;
+}
+
+.guide-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.guide-shot figcaption {
+  padding: 9px 12px;
+  border-top: 1px solid var(--line);
+  color: var(--faint);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.03em;
+}
+
+html[lang="ar"] .guide-shot figcaption {
+  font-family: var(--body);
+  font-size: 11px;
+  letter-spacing: 0;
+}
+
+.guide-media-pigeon {
+  justify-items: center;
+}
+
+.guide-phones {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+}
+
+.guide-phone-item {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  margin: 0;
+}
+
+.guide-phone {
+  padding: 6px;
+  border: 1px solid rgba(198, 255, 110, 0.24);
+  border-radius: 26px;
+  background: linear-gradient(160deg, rgba(198, 255, 110, 0.08), rgba(150, 100, 255, 0.08));
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45), 0 0 44px rgba(150, 255, 80, 0.08);
+}
+
+.guide-phone img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 19.5;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 20px;
+}
+
+.guide-phone-item figcaption {
+  color: var(--faint);
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+html[lang="ar"] .guide-phone-item figcaption {
+  font-family: var(--body);
+  font-size: 10px;
+  letter-spacing: 0;
+}
+
+.guide-caption {
+  margin: 0;
+  color: var(--faint);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+html[lang="ar"] .guide-caption {
+  font-family: var(--body);
+  font-size: 11px;
+  letter-spacing: 0;
+}
+
 /* Project art */
 .project-art {
   display: block;
@@ -1053,6 +1352,17 @@ html[dir="rtl"] .flip-rtl {
   }
 }
 
+@media (max-width: 760px) {
+  .guide-body {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
+
+  .guide-phones {
+    gap: 10px;
+  }
+}
+
 @media (max-width: 640px) {
   .container {
     width: min(100% - 32px, var(--container));
@@ -1097,6 +1407,24 @@ html[dir="rtl"] .flip-rtl {
   .project {
     padding: 22px;
     border-radius: 22px;
+  }
+
+  .project-guide {
+    margin-top: 4px;
+  }
+
+  .guide-summary {
+    gap: 8px;
+    padding: 15px 0 13px;
+    font-size: 14px;
+  }
+
+  .guide-meta {
+    display: none;
+  }
+
+  .guide-body {
+    padding-bottom: 24px;
   }
 
   .project-logo .pigeon-mark {

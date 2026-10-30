@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=8">
   <script>document.documentElement.classList.add('js');</script>
   <script src="app.js?v=3" defer></script>
 </head>
@@ -102,6 +102,59 @@
         <a class="shot-frame project-art" href="https://dostovinchi.github.io/reelnote-review-cards/" target="_blank" rel="noopener noreferrer" aria-label="Open Framix">
           <img src="assets/framix/framix-studio.webp" width="1600" height="1000" alt="Framix homepage with floating film stills and an Arabic headline" loading="lazy" decoding="async">
         </a>
+        <details class="project-guide" id="framix-guide">
+          <summary class="guide-summary">
+            <span class="guide-kicker">Details</span>
+            <span class="guide-heading">How to use Framix</span>
+            <span class="guide-meta">4 steps · screenshots</span>
+            <svg class="guide-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <div class="guide-body">
+            <div class="guide-column">
+            <ol class="guide-steps">
+              <li class="guide-step">
+                <span class="guide-index">01</span>
+                <div>
+                  <strong>Open the studio</strong>
+                  <p>Press “Open Framix” and start from the landing page.</p>
+                </div>
+              </li>
+              <li class="guide-step">
+                <span class="guide-index">02</span>
+                <div>
+                  <strong>Import your ratings</strong>
+                  <p>In the “Begin with your ratings” section, enter a public Letterboxd username or profile link, then import your ratings.</p>
+                </div>
+              </li>
+              <li class="guide-step">
+                <span class="guide-index">03</span>
+                <div>
+                  <strong>Make the card yours</strong>
+                  <p>Pick a review, then edit the title, year or director, rating and note. Choose artwork from TMDB or upload your own image.</p>
+                </div>
+              </li>
+              <li class="guide-step">
+                <span class="guide-index">04</span>
+                <div>
+                  <strong>Style and download</strong>
+                  <p>Use the final-touches controls to choose the theme, format and color, then download a 1080 × 1920 story PNG. Everything renders in your browser.</p>
+                </div>
+              </li>
+            </ol>
+            <p class="guide-tip"><b>Tip</b> Framix renders everything in your browser — no account and no upload.</p>
+            </div>
+            <div class="guide-media">
+              <figure class="guide-shot">
+                <img src="assets/framix/guide-import.webp" width="1120" height="204" alt="Framix Letterboxd import field with a username input and import button" loading="lazy" decoding="async">
+                <figcaption>02 · Import from Letterboxd</figcaption>
+              </figure>
+              <figure class="guide-shot">
+                <img src="assets/framix/guide-studio.webp" width="1240" height="1094" alt="Framix studio with a live story-card preview, film details, artwork picker and style controls" loading="lazy" decoding="async">
+                <figcaption>03–04 · Design, preview and export</figcaption>
+              </figure>
+            </div>
+          </div>
+        </details>
       </article>
 
       <article class="card project" data-reveal>
@@ -141,6 +194,66 @@
             <img src="assets/pocketpigeon/pigeon-inbox.webp" width="860" height="1864" alt="PocketPigeon phone inbox showing two links and a note sent from a computer" loading="lazy" decoding="async">
           </div>
         </div>
+        <details class="project-guide" id="pocketpigeon-guide">
+          <summary class="guide-summary">
+            <span class="guide-kicker">Details</span>
+            <span class="guide-heading">How to use PocketPigeon</span>
+            <span class="guide-meta">4 steps · screenshots</span>
+            <svg class="guide-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <div class="guide-body">
+            <div class="guide-column">
+            <ol class="guide-steps">
+              <li class="guide-step">
+                <span class="guide-index">01</span>
+                <div>
+                  <strong>Set it up once</strong>
+                  <p>Download the ZIP, start the relay and load the extension. The “How to run it” button has the exact setup.</p>
+                </div>
+              </li>
+              <li class="guide-step">
+                <span class="guide-index">02</span>
+                <div>
+                  <strong>Pair your phone</strong>
+                  <p>Click the PocketPigeon toolbar icon and scan its QR code with your phone camera on the same Wi-Fi. The key stays on both devices.</p>
+                </div>
+              </li>
+              <li class="guide-step">
+                <span class="guide-index">03</span>
+                <div>
+                  <strong>Send from the browser</strong>
+                  <p>Use “Send this tab”, right-click a link, image or selection, or press <code>Ctrl+Shift+S</code>. You can attach files from the popup too.</p>
+                </div>
+              </li>
+              <li class="guide-step">
+                <span class="guide-index">04</span>
+                <div>
+                  <strong>Pick it up on your phone</strong>
+                  <p>Text is copied, links open and files download. If the phone is away, messages wait on the relay and arrive when it reconnects.</p>
+                </div>
+              </li>
+            </ol>
+            <p class="guide-tip"><b>Tip</b> The relay stores only ciphertext; the room key never leaves your two devices.</p>
+            </div>
+            <div class="guide-media guide-media-pigeon">
+              <div class="guide-phones">
+                <figure class="guide-phone-item">
+                  <div class="guide-phone">
+                    <img src="assets/pocketpigeon/pairing.webp" width="780" height="1688" alt="PocketPigeon phone screen asking to pair with the browser extension by scanning a code" loading="lazy" decoding="async">
+                  </div>
+                  <figcaption>02 · Pair once</figcaption>
+                </figure>
+                <figure class="guide-phone-item">
+                  <div class="guide-phone">
+                    <img src="assets/pocketpigeon/pigeon-inbox.webp" width="860" height="1864" alt="PocketPigeon phone inbox with messages received from the desktop" loading="lazy" decoding="async">
+                  </div>
+                  <figcaption>03–04 · Send and receive</figcaption>
+                </figure>
+              </div>
+              <p class="guide-caption">AES-256-GCM · E2E</p>
+            </div>
+          </div>
+        </details>
       </article>
     </section>
   </main>
