@@ -36,7 +36,7 @@ Pushing to `main` runs `.github/workflows/deploy-pages.yml`, which publishes the
 ## Notes
 
 - Fonts come from Google Fonts; the rest of the site is self-contained.
-- The hero is a full-bleed background built from the supplied 498 × 281 GIF: a 996 px animated WebP (796 px at ≤900 px) upscaled from its frames, the original GIF as fallback, and static WebPs under reduced motion. Desktop centers the full frame over a dark blurred ambient fill and puts the copy over a soft local scrim; mobile stacks a full-width image band behind the title. Neither layout crops the artwork.
+- The hero is a full-bleed background built from the supplied 498 × 281 GIF: a 996 px animated WebP (796 px at ≤900 px) upscaled from its frames, the original GIF as fallback, and static WebPs under reduced motion. Desktop centers the full frame over a live, heavily blurred copy of the same animation (`hero-heaven-ambient.webp`) with a glass sheen and local text scrim; mobile stacks a full-width image band behind the title. Neither layout crops the artwork.
 - Each project card has a native `<details>` guide with four steps and screenshots; PocketPigeon keeps its quick-start modal for relay setup.
 - No build step, no framework, no analytics.
 - The PocketPigeon download is built from the source project; to update it, replace `downloads/pocketpigeon-<version>.zip` and the version badge in both pages.
