@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dostovinchi.github.io/sitemap.xml
